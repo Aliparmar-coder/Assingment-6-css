@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="icon" href="assets/olx_icon.ico" />
+    <script
+    src="https://kit.fontawesome.com/df5205f864.js"
+    crossorigin="anonymous"
+    ></script>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: white;
+                color: #002F34;
+                border: 2px solid #002F34;
+                margin: auto;
+                width: 350px;
+                height: 480px;
+                padding: 20px;
+            }
+            .login_with{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #002F34;
+                border-radius: 5px;
+                height: 45px;
+                width: 350px;
+                font-weight: bold;
+            }
+            .text{
+                margin-left: 10px;
+            }
+            .fa-solid{
+                font-size: 20px;
+            }
+            #login{
+                color: rgb(0, 106, 255);
+                font-weight: 700;
+                text-decoration: none;
+            }
+            #or{
+                font-size: 14px;
+                padding: 15px;
+            }
+            #text{
+                font-size: 13px;
+                color: black;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="assets/olx_logo.png" alt="Olx" width="100px" />
+    <h2>Create a new OLX account</h2>
+
+    <div class="login_with">
+    <span>
+        <img
+        src="https://imagepng.org/wp-content/uploads/2019/08/google-icon-1.png"
+        alt="G"
+        width="25px"
+    />
+    </span>
+    <span class="text">Join with Google</span>
+</div>
+
+    <div class="login_with">
+    <span>
+        <img
+        src="https://static.vecteezy.com/system/resources/previews/018/930/476/original/facebook-logo-facebook-icon-transparent-free-png.png"
+        alt="F"
+        width="40px"
+    />
+    </span>
+    <span>Join with Facebook</span>
+</div>
+
+    <span id="or">OR</span>
+<div class="login_with">
+    <span><i class="fa-solid fa-envelope"></i></span>
+    <span class="text">Join with Email</span>
+</div>
+
+<div class="login_with">
+    <span><i class="fa-solid fa-phone"></i></span>
+    <span class="text">Join with Phone</span>
+</div>
+
+<p id="text">
+    When creating a new account you agree to <u><b>OLX's <br> Terms and conditions</b></u> and <u><b>Privacy Policy</b></u>
+</p>
+
+    <a href="login.html" id="login">Already have an account? Log in</a>
+</div>
+</body>
+</html>

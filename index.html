@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLX - Clone</title>
+    <link rel="icon" href="assets/olx_icon.ico" />
+    <script
+      src="https://kit.fontawesome.com/df5205f864.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- navbar part 1 -->
+    <div class="navbar">
+      <nav id="nav1">
+      <!-- olx logo -->
+      <span class="logo_bar">
+        <img src="assets/olx_logo.png" alt="Olx" width="80px" class="cursor"/>
+      </span>
+
+      <!-- Motors -->
+       <div class="motor_div">
+        <span class="motor icon"><i class="fa-solid fa-car"></i></span>
+        <span class="icon_text-nav1">Motors</span>
+      </div>
+
+      <!-- Property -->
+      <div class="property_div">
+        <span class="property icon"><i class="fa-solid fa-building"></i></span>
+        <span class="icon_text-nav1">Property</span>
+      </div>
+    </nav>
+
+    <!-- navbar part 2 -->
+    <nav id="nav2">
+      <span class="select_bar ">
+        <i class="fa-solid fa-location-dot"></i>
+        <select name="country" id="select_bar" class="cursor">
+          <option value="Pak">Pakistan</option>
+          <option value="China">China</option>
+          <option value="UAE">United Arab Emirates</option>
+          <option value="Iraq">Iraq</option>
+          <option value="Iran">Iran</option>
+        </select>
+      </span>
+
+      <div class="input_bar">
+      <input type="text" placeholder="Find Cars, Mobile Phones and more..." id="input_nav2" />
+      <span id="input_search"><i class="fa-solid fa-magnifying-glass cursor"></i></span>
+      </div>
+      
+      <a href="login.html" id="login">Login</a>
+
+<div class="sell_container">
+      <span class="sell cursor"><i class="fa-solid fa-plus sell_icon"></i>SELL</span>
+    </nav>
+  </div>
+    </div>
+
+    <hr />
+    <!-- navbar part 3 -->
+    <nav id="nav3">
+    <select name="All Categories" id="select_nav3">
+      <option value="ALL CATEGORIES">ALL CATEGORIES</option>
+      <option value="Mobiles">Mobiles</option>
+      <option value="Bikes">Bikes</option>
+      <option value="Jobs">Jobs</option>
+      <option value="Furniture & Home Decor">Furniture & Home Decor</option>
+      <option value="Vehicles">Vehicles</option>
+      <option value="Business, Industrial & Agriculture">Business</option>
+      <option value="Fashion & Beauty">Fashion & Beauty</option>
+    </select>
+
+    <span class="nav3_name">Mobile Phones</span>
+    <span class="nav3_name">Cars</span>
+    <span class="nav3_name">Motorcycles</span>
+    <span class="nav3_name">Houses</span>
+    <span class="nav3_name">Video-Audios</span>
+    <span class="nav3_name">Tablets</span>
+    <span class="nav3_name">Land & Plots</span>
+  </nav>
+
+    <img
+      src="https://images.olx.com.pk/thumbnails/534504275-800x600.webp"
+      id="img1_ad"
+      width="100%"
+    />
+    <img
+      src="https://tpc.googlesyndication.com/daca_images/simgad/14239619109436756464"
+      id="img2_ad"
+      width="800px"
+    />
+
+  <!-- All Categories Part 1-->
+  <h2 id="categories_heading">All Categories</h2>
+    <div class="all_categories">
+
+   <!-- category 1 -->
+    <div class="category1 categories cursor">
+      <img src="https://www.olx.com.pk/assets/mobiles.8c768c96bfde33f18fcf5af2a8b9cf71.png" alt="Mobiles" width="90px">
+      <p>Mobiles</p>
+    </div>
+
+    <!-- category 2 -->
+    <div class="category2 categories cursor">
+      <img src="https://www.olx.com.pk/assets/vehicles.29fb808d5118f0db56f68a39ce5392e2.png" alt="Vehicles" width="90px">
+      <p>Vehicles</p>
+    </div>
+
+    <!-- category 3 -->
+    <div class="category3 categories cursor">
+      <img src="https://www.olx.com.pk/assets/property-for-sale.e3a00dbfdaa69fe5f713665f1069502f.png" alt="Property For Sale" width="90px">
+      <p>Property For Sale</p>
+    </div>
+
+    <!-- category 4 -->
+    <div class="category4 categories cursor">
+      <img src="https://www.olx.com.pk/assets/property-for-rent.8436595fbaa90d47f0178006f57090a8.png" alt="Property For Rent" width="90px">
+      <p>Property For Rent</p>
+    </div>
+
+    <!-- category 5 -->
+    <div class="category5 categories cursor">
+      <img src="https://www.olx.com.pk/assets/electronics-home-appliances.46e034dd8adca44625c2c70e4d1b5984.png" alt="Electronics & Home Appliances" width="90px">
+      <p>Electronics & Home Appliances</p>
+    </div>
+
+    <!-- category 6 -->
+    <div class="category6 categories cursor">
+      <img src="https://www.olx.com.pk/assets/bikes.4dcd02c49b2b83aa5b4d629d1e2b383e.png" alt="Bikes" width="90px">
+      <p>Bikes</p>
+    </div>
+    
+    <!-- category 7 -->
+    <div class="category7 categories cursor">
+      <img src="https://www.olx.com.pk/assets/business-industrial-agriculture.704a6ffb9081bc94b11c102cc613670f.png" alt="Business, Industrial & Agriculture" width="90px">
+      <p>Business, Industrial & Agriculture</p>
+    </div>
+
+  <!-- category 8 -->
+    <div class="category8 categories cursor">
+      <img src="https://www.olx.com.pk/assets/services.dc6aef196c0403dc61b0ee813f66fa5b.png" alt="Services" width="90px">
+      <p>Services</p>
+    </div>
+
+    <!-- category 9 -->
+    <div class="category9 categories cursor">
+      <img src="https://www.olx.com.pk/assets/jobs.79e6136dda02111cf8e7afe26b9e0f93.png" alt="Jobs" width="90px">
+      <p>Jobs</p>
+    </div>
+
+    <!-- category 10 -->
+    <div class="category10 categories cursor">
+      <img src="https://www.olx.com.pk/assets/animals.62d396e85f7523dbc8ff23889fdd5c31.png" alt="Animals" width="90px">
+      <p>Animals</p>
+    </div>
+
+    <!-- category 11 -->
+    <div class="category11 categories cursor">
+      <img src="https://www.olx.com.pk/assets/furniture-home-decor.66bcf157a53ea4c736a5b0af41219475.png" alt="Furniture & Home Decor" width="90px">
+      <p>Furniture & Home Decor</p>
+    </div>
+
+    <!-- category 12 -->
+    <div class="category12 categories cursor">
+      <img src="https://www.olx.com.pk/assets/fashion-beauty.dd2cf7638c29b0e5c084a6673dd94dd7.png" alt="Fashion & Beauty" width="90px">
+      <p>Fashion & Beauty</p>
+    </div>
+
+    <!-- category 13 -->
+    <div class="category13 categories cursor">
+      <img src="https://www.olx.com.pk/assets/books-sports-hobbies.6fee8d841b332d65a10f050f4a2ee1c8.png" alt="Books, Sports & Hobbies" width="90px">
+      <p>Books, Sports & Hobbies</p>
+    </div>
+    
+    <!-- category 14 -->
+    <div class="category14 categories cursor">
+      <img src="https://www.olx.com.pk/assets/kids.cd8d8864804f1c35dd6a7df68268a48d.png" alt="Kids" width="90px">
+      <p>Kids</p>
+    </div>
+
+  </div>
+
+  <!-- More in Mobiles -->
+  <div class="outsider">
+      <h2 class="product_heading">Mobile Phones</h2>
+      <a href="#" class="view_more">View more ></a>
+  </div>
+
+  <div class="more_product_container">
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/535614967-800x600.webp" alt="mobile" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 35,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Camon 20</p>
+          <p class="location">Harapa Road, Sahiwal</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/535038218-800x600.webp" alt="mobile" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 52,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Iphone 11 64gb jv Purple Colour</p>
+          <p class="location">Bund Road, Lahore</p>
+          <p class="time">1 day ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/534796490-800x600.webp" alt="mobile" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 32,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Samsung S20Plus 12/128 Approved</p>
+          <p class="location">Saddar, Karachi</p>
+          <p class="time">2 days ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/533745746-800x600.webp" alt="mobile" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 85,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Google Pixel 6pro PTA Approved</p>
+          <p class="location">Thokar Niaz Baig, Lahore</p>
+          <p class="time">1 week ago</p>
+      </div>
+    </div>
+
+  </div>
+
+  <span class="top_btn">
+      <a href="index.html" id="top_btn"><i class="fa-solid fa-arrow-up-from-bracket"></i><span id="top_text">Back to Top</span></a>
+  </span>
+  
+  <!-- More in Cars -->
+<div class="outsider">
+  <h2 class="product_heading">Cars</h2>
+    <a href="#" class="view_more">View more ></a>
+</div>
+
+  <div class="more_product_container">
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/531921735-800x600.webp" alt="car" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 8,800,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Hyundai Tucson AWD 2023 Better Than Sportage, Glory , MG ,Proton X70,</p>
+          <p class="location">Keer Khurd, Lahore</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/534462954-800x600.webp" alt="car" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 4,350,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Toyota Axio 2014 Uplift 2016</p>
+          <p class="location">Gulshan Abad, Rawalpindi</p>
+          <p class="time">1 day ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/535088401-800x600.webp" alt="car" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 4,375,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">TOYOTA COROLLA ALTIS AUTOMATIC 1.6 MODEL 2018</p>
+          <p class="location">Saddar, Karachi</p>
+          <p class="time">2 days ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/533755041-800x600.webp" alt="car" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 9,900,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Audi A4 1.8 TFSI 2016</p>
+          <p class="location">DHA Phase 5, Lahore</p>
+          <p class="time">1 week ago</p>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- More in Bikes -->
+    <div class="outsider">
+    <h2 class="product_heading">Bikes & Motorcycles</h2>
+    <a href="#" class="view_more">View more ></a>
+</div>
+    <div class="more_product_container">
+
+    <div class="product cursor">
+    <img src="https://images.olx.com.pk/thumbnails/535661055-800x600.webp" alt="Bikes" class="imgs">
+    <div class="product_detail">
+    <p class="price_heart">
+    <span class="price">Rs: 850,000</span>
+    <span><i class="fa-regular fa-heart heart"></i></span>
+    </p>
+      <p class="name">Benelli 180S Model 2022 | Benelli In Bikes | Total Geniune</p><p class="location">Gulberg 3, Lahore</p>
+           <p class="time">21 hours ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/530760127-800x600.webp" alt="Bikes" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 2,750,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">Benelli TNT 600i Model 2024 | Benelli In Bikes | Total Geniune</p>
+           <p class="location">Hayatabad Phase 1, Peshawar</p>
+           <p class="time">1 day ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/532246553-800x600.webp" alt="Bikes" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 1,085,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">Harley-Davidson | Model 2024 | OVERDRIVE COUGAR | Total Geniune</p>
+           <p class="location">Ugoke Road, Sialkot</p>
+           <p class="time">2 days ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/536136181-800x600.webp" alt="Bikes" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 220,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">Honda CG 125cc 24/25 model</p>
+           <p class="location">Murree Road, Rawalpindi</p>
+           <p class="time">1 week ago</p>
+       </div>
+     </div>
+ 
+   </div>
+
+    <!-- More in Houses -->
+  <div class="outsider">
+  <h2 class="product_heading">Houses</h2>
+    <a href="#" class="view_more">View more ></a>
+</div>
+  <div class="more_product_container">
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/531256775-800x600.webp" alt="house" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 17,500,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Your Dream Home In Heart Of Rawalpindi on Installments</p>
+          <p class="location">Gulshan Abad, Rawalpindi</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/526160410-800x600.webp" alt="house" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs:  210,000,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Direct Owner Brand New Main Boulevard 550 Sq Yrd House 100 Ft Wide Road View Available At D. O. H. S. I</p>
+          <p class="location">DOHS Phase 1, Karachi</p>
+          <p class="time">1 day ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/533934139-800x600.webp" alt="house" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 29,000,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Stunning 10 Marla Contemporary House in Banker Avenue Dont Miss Out!</p>
+          <p class="location">Bankers Avenue, Lahore</p>
+          <p class="time">2 days ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/536098305-800x600.webp" alt="house" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 92,000,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Modern Design & Near To Ring Road 1 Kanal Brand New House For Sale In M-3 Lake City Raiwind Road Lahore</p>
+          <p class="location">Lake City - Sector M-3, Lahore</p>
+          <p class="time">1 week ago</p>
+      </div>
+    </div>
+
+  </div>
+
+   <!-- More in Video-Audios -->
+   <div class="outsider">
+   <h2 class="product_heading">Video-Audios</h2>
+    <a href="#" class="view_more">View more ></a>
+</div>
+   <div class="more_product_container">
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/519984035-800x600.webp" alt="Video-Audios" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 7,500</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">Walkie talkie ,Motorola, kenwood | Wirless Set |Motrola Tc999</p>
+           <p class="location">E-11, Islamabad</p>
+           <p class="time">21 hours ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/482286300-800x600.webp" alt="Video-Audios" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 69,500</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">Smart Board, Interactive Touch Board, Flat Panel, Digital Screen, Zoom</p>
+           <p class="location">Blue Area, Islamabad</p>
+           <p class="time">1 day ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/245615742-800x600.webp" alt="Video-Audios" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 65,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">smart board digital board ,Sony ,Panasonic ,Epson,Acer,Benq,Optoma</p>
+           <p class="location">Bahria Town, Islamabad</p>
+           <p class="time">2 days ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/524195696-800x600.webp" alt="Video-Audios" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 35,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">Studio USB Mic -Samson G Track Pro (Special Deal)</p>
+           <p class="location">Gulistan-e-Jauhar, Karachi</p>
+           <p class="time">1 week ago</p>
+       </div>
+     </div>
+ 
+   </div>
+
+    <!-- More in Tablets -->
+  <div class="outsider">
+    <h2 class="product_heading">Tablets</h2>
+    <a href="#" class="view_more">View more ></a>
+  </div>
+  <div class="more_product_container">
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/434041769-800x600.webp" alt="Tablets" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 7,999</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Tabs For Kids & Use Stock Available(Samsung,Lenovo,LG, Huawei/ youtube</p>
+          <p class="location">Model Town, Lahore</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/461738258-800x600.webp" alt="Tablets" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 8,999</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Tabs for kids / Tabs for gaming/Tabs for office(Samsung,Lenovo, Huawei</p>
+          <p class="location">Abid Market, Lahore</p>
+          <p class="time">1 day ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/533502084-800x600.webp" alt="Tablets" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 120,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Apple mini 7 128gb 45cycles</p>
+          <p class="location">Gulgasht Colony, Multan</p>
+          <p class="time">2 days ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/441207986-800x600.webp" alt="Tablets" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+            <span class="price">Rs: 45,000</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="name">Lenovo Tablet M8 4/64 4G PTA approved</p>
+          <p class="location">E-11/1, Islamabad
+          </p>
+          <p class="time">1 week ago</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- More in Land & Plots -->
+  <div class="outsider">
+  <h2 class="product_heading">Land & Plots</h2>
+    <a href="#" class="view_more">View more ></a>
+  </div>
+
+   <div class="more_product_container">
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/536004546-800x600.webp" alt="Land & Plots" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 11,700,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">8 mrle plot for sale Faisal town A block</p>
+           <p class="location">Faisal Town Phase 1 - Block A, Islamabad
+          </p>
+           <p class="time">21 hours ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/530584886-800x600.webp" alt="Land & Plots" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 33,300,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">GREAT OFFER!!! CORNER PLOT on GT Road @ VERY REASONABLE PRICE</p>
+           <p class="location">DHA Defence Phase 2, Islamabad
+          </p>
+           <p class="time">1 day ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/527916819-800x600.webp" alt="Land & Plots" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 6,000,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">5 Marla Tulip Overseas Block (Best Location + Best Price)</p>
+           <p class="location">Park View City - Tulip Overseas, Lahore</p>
+           <p class="time">2 days ago</p>
+       </div>
+     </div>
+ 
+     <div class="product cursor">
+       <img src="https://images.olx.com.pk/thumbnails/534068446-800x600.webp" alt="Land & Plots" class="imgs">
+       <div class="product_detail">
+           <p class="price_heart">
+             <span class="price">Rs: 12,800,000</span>
+             <span><i class="fa-regular fa-heart heart"></i></span>
+           </p>
+           <p class="name">1 Kanal Plot Block S Khayaban e Amin</p>
+           <p class="location">Khayaban-e-Amin - Block S, Lahore</p>
+           <p class="time">1 week ago</p>
+       </div>
+     </div>
+ 
+   </div>
+
+    <!-- More in Jobs -->
+  <div class="outsider">
+  <h2 class="product_heading">Jobs</h2>
+    <a href="#" class="view_more">View more ></a>
+  </div>
+
+  <div class="more_product_container">
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/532086138-800x600.webp" alt="Jobs" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+          <span class="name2">Jobs in Saudi Arabia</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="location">G-6, Islamabad</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/524636261-800x600.webp" alt="Jobs" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+          <span class="name2">Teachers Require</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="location">Faisal Town, Lahore</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/534507687-800x600.webp" alt="Jobs" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+          <span class="name2">Therapist</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="location">7th Avenue, Islamabad</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+    <div class="product cursor">
+      <img src="https://images.olx.com.pk/thumbnails/527318252-800x600.webp" alt="Jobs" class="imgs">
+      <div class="product_detail">
+          <p class="price_heart">
+          <span class="name2">Out Bound Call Centre Agents</span>
+            <span><i class="fa-regular fa-heart heart"></i></span>
+          </p>
+          <p class="location">Maulana Shaukat Ali Road, Lahore</p>
+          <p class="time">21 hours ago</p>
+      </div>
+    </div>
+
+  </div>
+
+    <!-- Advertisement -->
+    <div class="ad">
+      <div class="ad_img">
+          <img src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp" alt="Ads">
+      </div>
+
+      <div class="get_app">
+      <p class="heading">GET YOUR APP TODAY</p>
+      <div class="ad_detail">
+
+        <div class="app_store app">
+          <img src="https://sahi.com/images/backgrounds/apple1.png" alt="" width="120px" class="apple">
+        </div>
+        
+        <div class="google_play app" id="apps">
+        <img src="https://minitaxi.se/wp-content/uploads/2023/06/googleplay-1-e1686150270869.png" alt="" width="120px" class="apps">
+      </div>
+
+        <div class="app_gallery app" id="apps">
+          <img src="https://boxberry.ru/market/img/app-gallery.jpg" alt="" width="132px" class="apps">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer Section -->
+  <footer>
+    <div class="footer_container">
+      <div class="pop_categories">
+        <p class="heading">popular categories</p>
+        <div class="foot_product_names cursor">
+        <p>Cars</p>
+        <p>Flats for rent</p>
+        <p>Mobile Phones</p>
+        <p>Jobs</p>
+      </div>
+      </div>
+
+      <div class="pop_categories">
+        <p class="heading">trending searches</p>
+        <div class="foot_product_names cursor">
+
+        <p>Bikes</p>
+        <p>Watches</p>
+        <p>Books</p>
+        <p>Dogs</p>
+        </div>
+      </div>
+
+      <div class="pop_categories">
+        <p class="heading">About Us</p>
+        <div class="foot_product_names cursor">
+
+        <p>About Dubizle Group</p>
+        <p>OLX Blog</p>
+        <p>Contact Us</p>
+        <p>OLX for Businesses</p>
+        </div>
+      </div>
+
+      <div class="pop_categories">
+        <p class="heading">OLX</p>
+        <div class="foot_product_names cursor">
+
+        <p>Help</p>
+        <p>Sitemap</p>
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+        </div>
+      </div>
+
+      <div class="pop_categories">
+        <p class="heading">Follow US</p>
+        <div class="media_details cursor">
+        <span class="social1 media"><i class="fa-brands fa-twitter"></i></span>
+        <span class="social2 media"><i class="fa-brands fa-facebook-f"></i></span>
+        <span class="social3 media"><i class="fa-solid fa-play"></i></span>
+        <span class="social4 media"><i class="fa-brands fa-instagram"></i></span>
+      </div>
+
+      <div class="ad_detail foot_apps">
+
+        <div class="app_store app cursor">
+          <img src="https://sahi.com/images/backgrounds/apple1.png" alt="" width="120px" class="apple foot_apple">
+        </div>
+        
+        <div class="google_play app cursor">
+        <img src="https://minitaxi.se/wp-content/uploads/2023/06/googleplay-1-e1686150270869.png" alt="" width="120px" class="apps foot_app">
+      </div>
+
+        <div class="app_gallery app cursor">
+          <img src="https://boxberry.ru/market/img/app-gallery.jpg" alt="" width="132px" class="apps foot_app">
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="end_footer">
+      <p><b>Free Classifieds in Pakistan</b> &copy; 2006-2025 OLX</p>
+    </div>
+  </footer>
+  </body>
+</html>
